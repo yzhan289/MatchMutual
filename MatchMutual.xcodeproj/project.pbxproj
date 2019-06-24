@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		EE1134E022C152BC00CF21B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1134DF22C152BC00CF21B5 /* AppDelegate.swift */; };
-		EE1134E222C152BC00CF21B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1134E122C152BC00CF21B5 /* ViewController.swift */; };
-		EE1134E522C152BC00CF21B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1134E322C152BC00CF21B5 /* Main.storyboard */; };
+		EE1134E222C152BC00CF21B5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1134E122C152BC00CF21B5 /* MainTabBarController.swift */; };
 		EE1134E822C152BC00CF21B5 /* MatchMutual.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE1134E622C152BC00CF21B5 /* MatchMutual.xcdatamodeld */; };
 		EE1134EA22C152BD00CF21B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1134E922C152BD00CF21B5 /* Assets.xcassets */; };
 		EE1134ED22C152BD00CF21B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1134EB22C152BD00CF21B5 /* LaunchScreen.storyboard */; };
+		EE1134F522C1594E00CF21B5 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1134F422C1594E00CF21B5 /* ChatsViewController.swift */; };
+		EE1134F722C1596200CF21B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1134F622C1596200CF21B5 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE1134DC22C152BC00CF21B5 /* MatchMutual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMutual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1134DF22C152BC00CF21B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE1134E122C152BC00CF21B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE1134E422C152BC00CF21B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE1134E122C152BC00CF21B5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		EE1134E722C152BC00CF21B5 /* MatchMutual.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MatchMutual.xcdatamodel; sourceTree = "<group>"; };
 		EE1134E922C152BD00CF21B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE1134EC22C152BD00CF21B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1134EE22C152BD00CF21B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE1134F422C1594E00CF21B5 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		EE1134F622C1596200CF21B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				EE1134DF22C152BC00CF21B5 /* AppDelegate.swift */,
-				EE1134E122C152BC00CF21B5 /* ViewController.swift */,
-				EE1134E322C152BC00CF21B5 /* Main.storyboard */,
+				EE1134F422C1594E00CF21B5 /* ChatsViewController.swift */,
+				EE1134F622C1596200CF21B5 /* ProfileViewController.swift */,
+				EE1134E122C152BC00CF21B5 /* MainTabBarController.swift */,
 				EE1134E922C152BD00CF21B5 /* Assets.xcassets */,
 				EE1134EB22C152BD00CF21B5 /* LaunchScreen.storyboard */,
 				EE1134EE22C152BD00CF21B5 /* Info.plist */,
@@ -127,7 +130,6 @@
 			files = (
 				EE1134ED22C152BD00CF21B5 /* LaunchScreen.storyboard in Resources */,
 				EE1134EA22C152BD00CF21B5 /* Assets.xcassets in Resources */,
-				EE1134E522C152BC00CF21B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +141,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1134E822C152BC00CF21B5 /* MatchMutual.xcdatamodeld in Sources */,
-				EE1134E222C152BC00CF21B5 /* ViewController.swift in Sources */,
+				EE1134E222C152BC00CF21B5 /* MainTabBarController.swift in Sources */,
+				EE1134F522C1594E00CF21B5 /* ChatsViewController.swift in Sources */,
 				EE1134E022C152BC00CF21B5 /* AppDelegate.swift in Sources */,
+				EE1134F722C1596200CF21B5 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE1134E322C152BC00CF21B5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE1134E422C152BC00CF21B5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE1134EB22C152BD00CF21B5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
