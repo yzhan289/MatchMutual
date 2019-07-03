@@ -18,13 +18,16 @@ class MainTabBarController: UITabBarController {
 
     func setupTabBar() {
         //TODO: Change these tab bars to custom ones
-        let videoController = UINavigationController(rootViewController: ChatsViewController())
-        videoController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        let chatController = UINavigationController(rootViewController: ChatsViewController())
+        chatController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
         
-        let favoriteController = UINavigationController(rootViewController: ProfileViewController())
-        favoriteController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        let profileController = UINavigationController(rootViewController: ProfileViewController())
+        profileController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
 		
-        viewControllers = [videoController, favoriteController]
+		let swipeController = UINavigationController(rootViewController: SwipeTabViewController())
+		swipeController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
+		
+        viewControllers = [swipeController, chatController, profileController]
     }
 
 }

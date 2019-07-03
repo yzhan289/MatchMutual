@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		EE1134ED22C152BD00CF21B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1134EB22C152BD00CF21B5 /* LaunchScreen.storyboard */; };
 		EE1134F522C1594E00CF21B5 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1134F422C1594E00CF21B5 /* ChatsViewController.swift */; };
 		EE1134F722C1596200CF21B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1134F622C1596200CF21B5 /* ProfileViewController.swift */; };
+		EE3D9A2C22CCE8E600D276D4 /* SwipeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D9A2B22CCE8E600D276D4 /* SwipeTabViewController.swift */; };
+		EE3D9A2E22CCEA4500D276D4 /* SwipeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3D9A2D22CCEA4500D276D4 /* SwipeTab.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EE1134EE22C152BD00CF21B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE1134F422C1594E00CF21B5 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		EE1134F622C1596200CF21B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EE3D9A2B22CCE8E600D276D4 /* SwipeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabViewController.swift; sourceTree = "<group>"; };
+		EE3D9A2D22CCEA4500D276D4 /* SwipeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwipeTab.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,6 @@
 				97805B06A0E8A718F41E30B2 /* Pods-MatchMutual.debug.xcconfig */,
 				9FF3DE01527C65620C649AF5 /* Pods-MatchMutual.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,12 +86,14 @@
 		EE1134DE22C152BC00CF21B5 /* MatchMutual */ = {
 			isa = PBXGroup;
 			children = (
+				EE1134EB22C152BD00CF21B5 /* LaunchScreen.storyboard */,
+				EE3D9A2D22CCEA4500D276D4 /* SwipeTab.storyboard */,
 				EE1134DF22C152BC00CF21B5 /* AppDelegate.swift */,
 				EE1134F422C1594E00CF21B5 /* ChatsViewController.swift */,
+				EE3D9A2B22CCE8E600D276D4 /* SwipeTabViewController.swift */,
 				EE1134F622C1596200CF21B5 /* ProfileViewController.swift */,
 				EE1134E122C152BC00CF21B5 /* MainTabBarController.swift */,
 				EE1134E922C152BD00CF21B5 /* Assets.xcassets */,
-				EE1134EB22C152BD00CF21B5 /* LaunchScreen.storyboard */,
 				EE1134EE22C152BD00CF21B5 /* Info.plist */,
 				EE1134E622C152BC00CF21B5 /* MatchMutual.xcdatamodeld */,
 			);
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1134ED22C152BD00CF21B5 /* LaunchScreen.storyboard in Resources */,
+				EE3D9A2E22CCEA4500D276D4 /* SwipeTab.storyboard in Resources */,
 				EE1134EA22C152BD00CF21B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1134E822C152BC00CF21B5 /* MatchMutual.xcdatamodeld in Sources */,
+				EE3D9A2C22CCE8E600D276D4 /* SwipeTabViewController.swift in Sources */,
 				EE1134E222C152BC00CF21B5 /* MainTabBarController.swift in Sources */,
 				EE1134F522C1594E00CF21B5 /* ChatsViewController.swift in Sources */,
 				EE1134E022C152BC00CF21B5 /* AppDelegate.swift in Sources */,

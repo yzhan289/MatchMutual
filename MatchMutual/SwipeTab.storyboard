@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipe Tab View Controller-->
+        <scene sceneID="VRA-3x-6s0">
+            <objects>
+                <viewController id="Igi-Zg-wnB" customClass="SwipeTabViewController" customModule="MatchMutual" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qsm-tv-TFt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yi4-wC-Iy6" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="0.0" y="94" width="414" height="718"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="718" id="eP7-VW-tXY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yi4-wC-Iy6" firstAttribute="leading" secondItem="3gA-3W-2xI" secondAttribute="leading" id="2GG-uC-F7n"/>
+                            <constraint firstItem="3gA-3W-2xI" firstAttribute="bottom" secondItem="yi4-wC-Iy6" secondAttribute="bottom" constant="50" id="A1d-Sb-ysC"/>
+                            <constraint firstItem="3gA-3W-2xI" firstAttribute="trailing" secondItem="yi4-wC-Iy6" secondAttribute="trailing" id="KoO-ga-UjW"/>
+                            <constraint firstItem="yi4-wC-Iy6" firstAttribute="top" secondItem="3gA-3W-2xI" secondAttribute="top" constant="50" id="V9Y-CV-CGR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3gA-3W-2xI"/>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="yi4-wC-Iy6" id="coB-V9-i2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jql-EM-M9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
